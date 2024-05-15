@@ -1,0 +1,22 @@
+{
+  "name": "@freed/smart-contract",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "dotenv -- pnpm run contract:dev & pnpm run ui:dev",
+    "contract:compile": "dotenv -- pnpm --filter @freed/contract compile",
+    "contract:node": "dotenv -- pnpm --filter @freed/contract node",
+    "contract:dev": "dotenv -- pnpm --filter @freed/contract dev",
+    "ui:dev": "dotenv -- pnpm --filter @freed/contract-ui dev",
+    "api:dev": "dotenv -- pnpm --filter @freed/contract api:dev",
+    "contract:deploy": "dotenv -- pnpm --filter @freed/contract run deploy",
+    "contract:clean": "dotenv -- pnpm --filter @freed/contract clean"
+  },
+  "devDependencies": {
+    "dotenv-cli": "^7.4.1"
+  },
+  "dependencies": {
+    "hono": "^4.3.2"
+  }
+}

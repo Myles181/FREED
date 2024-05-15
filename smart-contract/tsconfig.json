@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "noEmit": true,
+    "paths": {
+      "@freed/contract/*": [
+        "./packages/contract/*",
+        "./packages/contract/src/*"
+      ],
+      "@freed/contract-ui/*": [
+        "./packages/ui/src/*"
+      ]
+    },
+    "jsx": "preserve",
+    "allowJs": true,
+    "strict": true,
+    "noFallthroughCasesInSwitch": true,
+    "strictFunctionTypes": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "experimentalDecorators": true,
+    "allowUnreachableCode": false,
+    "emitDecoratorMetadata": true,
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "target": "ES2022",
+    "incremental": true
+  }
+}
